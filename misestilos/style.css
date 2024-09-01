@@ -1,0 +1,73 @@
+
+/*css global*/
+html{
+    font-size:62.5%; /*1rem=10px*/
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh; 
+    margin: 0;
+
+    text-align: center; 
+    font-size: 3rem;
+    background: rgb(0, 0, 0); 
+    background: linear-gradient( 
+        0deg, 
+        rgba(0, 0, 0, 1) 17%, 
+        rgba(4, 251, 210, 1) 45%, 
+        rgba(1, 213, 246, 1) 65%, 
+        rgba(0, 0, 0, 1) 98%
+    );
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+.numero {
+    background-color: rgba(7, 65, 201, 0.8);
+    color: aliceblue;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    outline: none;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.numero:focus {
+    border-color: #00ffea;
+    transform: scale(1.05);
+}
+.btnEnviar {
+    background-color: #0069d9;
+    color: white;
+    border: 2px solid #004085;
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btnEnviar:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    border-color: #00ffea;
+}
+.digite label {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    display: block;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.mensajes p{
+    border-radius: 2rem;
+}
+.mensajes p:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
